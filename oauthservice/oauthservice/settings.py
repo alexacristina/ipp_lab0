@@ -67,9 +67,7 @@ DATABASES = {
 }
 
 REST_FRAMEWORK = {
-    'DEFAULT AUTHENTICATION CLASSES': (
-        'oauth2_provider.ext.rest_framework.OAuth2Authentication',
-    ),
+   
 }
 # Internationalization
 # https://docs.djangoproject.com/en/1.7/topics/i18n/

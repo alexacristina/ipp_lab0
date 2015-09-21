@@ -9,5 +9,4 @@ urlpatterns = patterns('',
     url(r'^login', views.Login.as_view(), name = 'login'), 
     url(r'^get_last_login', views.GetLastLogin.as_view(), name = 'get_last_login'),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
 )

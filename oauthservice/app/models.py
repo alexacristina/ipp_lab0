@@ -13,8 +13,8 @@ class Client(models.Model):
 
 class AccessToken(models.Model):
 	user = models.ForeignKey(User)
-	token = models.CharField(default='', max_length=255)
 	client = models.ForeignKey(Client)
+	token = models.CharField(default='', max_length=255)
 
 	def generate_token(self):
 		self.token=default_token_generator.make_token(self.user)
